@@ -1,0 +1,6 @@
+{{#if has_datasets?}}{{> item_as_def}}
+{{{ rendered_children.datatable }}}
+{{else}}
+@pytest.mark.nondestructive
+def test_{{{ underscore self_name }}}({{> parameters}}):
+{{> body}}{{/if}}
