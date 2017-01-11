@@ -3,3 +3,4 @@ actionwords_signature.yaml
 .cache/
 results/
 *.pyc
+pkg/

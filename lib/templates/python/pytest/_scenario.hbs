@@ -2,5 +2,5 @@
 {{{ rendered_children.datatable }}}
 {{else}}
 @pytest.mark.nondestructive
-def test_{{{ underscore self_name }}}({{> parameters}}):
+def test_{{{ underscore self_name }}}{{#if rendered_children.uid}}_uid{{{ underscore rendered_children.uid}}}{{/if}}({{> parameters}}):
 {{> body}}{{/if}}
